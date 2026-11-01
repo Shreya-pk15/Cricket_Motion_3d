@@ -1,0 +1,230 @@
+[
+  {
+    "class": "Cover Drive",
+    "clip_name": "vid100_41.avi",
+    "valid_count": 20,
+    "missed_count": 1,
+    "missed_frames": [
+      10
+    ],
+    "suspected_wrong_person": [
+      {
+        "frame": 1,
+        "reason": "anomalous_stature",
+        "body_h": 0.039,
+        "cx": 0.475,
+        "cy": 0.921
+      },
+      {
+        "frame": 2,
+        "reason": "anomalous_stature",
+        "body_h": 0.253,
+        "cx": 0.475,
+        "cy": 0.928
+      },
+      {
+        "frame": 3,
+        "reason": "anomalous_stature",
+        "body_h": 0.259,
+        "cx": 0.473,
+        "cy": 0.929
+      }
+    ]
+  },
+  {
+    "class": "Cover Drive",
+    "clip_name": "vid100_60.avi",
+    "valid_count": 24,
+    "missed_count": 0,
+    "missed_frames": [],
+    "suspected_wrong_person": []
+  },
+  {
+    "class": "Defensive",
+    "clip_name": "vid100_0.avi",
+    "valid_count": 24,
+    "missed_count": 0,
+    "missed_frames": [],
+    "suspected_wrong_person": []
+  },
+  {
+    "class": "Defensive",
+    "clip_name": "vid100_14.avi",
+    "valid_count": 24,
+    "missed_count": 0,
+    "missed_frames": [],
+    "suspected_wrong_person": []
+  },
+  {
+    "class": "Flick",
+    "clip_name": "vid100_38.avi",
+    "valid_count": 24,
+    "missed_count": 0,
+    "missed_frames": [],
+    "suspected_wrong_person": []
+  },
+  {
+    "class": "Hook",
+    "clip_name": "vid100_13.avi",
+    "valid_count": 24,
+    "missed_count": 0,
+    "missed_frames": [],
+    "suspected_wrong_person": []
+  },
+  {
+    "class": "Late Cut",
+    "clip_name": "vid101_23.avi",
+    "valid_count": 21,
+    "missed_count": 0,
+    "missed_frames": [],
+    "suspected_wrong_person": [
+      {
+        "frame": 20,
+        "reason": "anomalous_stature",
+        "body_h": 0.228,
+        "cx": 0.47,
+        "cy": 0.727
+      },
+      {
+        "frame": 21,
+        "reason": "anomalous_stature",
+        "body_h": 0.252,
+        "cx": 0.437,
+        "cy": 0.794
+      },
+      {
+        "frame": 23,
+        "reason": "anomalous_stature",
+        "body_h": 0.317,
+        "cx": 0.354,
+        "cy": 0.841
+      }
+    ]
+  },
+  {
+    "class": "Pull",
+    "clip_name": "vid100_29.avi",
+    "valid_count": 23,
+    "missed_count": 1,
+    "missed_frames": [
+      22
+    ],
+    "suspected_wrong_person": []
+  },
+  {
+    "class": "Reverse Sweep",
+    "clip_name": "vid100_36.avi",
+    "valid_count": 19,
+    "missed_count": 3,
+    "missed_frames": [
+      15,
+      22,
+      23
+    ],
+    "suspected_wrong_person": [
+      {
+        "frame": 20,
+        "reason": "inverted/non-upright",
+        "body_h": 0.065,
+        "cx": 0.449,
+        "cy": 0.368
+      },
+      {
+        "frame": 21,
+        "reason": "anomalous_stature",
+        "body_h": 0.207,
+        "cx": 0.887,
+        "cy": 0.909
+      }
+    ]
+  },
+  {
+    "class": "Scoop",
+    "clip_name": "vid100_28.avi",
+    "valid_count": 14,
+    "missed_count": 3,
+    "missed_frames": [
+      5,
+      7,
+      15
+    ],
+    "suspected_wrong_person": [
+      {
+        "frame": 6,
+        "reason": "inverted/non-upright",
+        "body_h": 0.492,
+        "cx": 0.381,
+        "cy": 0.533
+      },
+      {
+        "frame": 14,
+        "reason": "anomalous_stature",
+        "body_h": 0.29,
+        "cx": 0.456,
+        "cy": 0.488
+      },
+      {
+        "frame": 16,
+        "reason": "inverted/non-upright",
+        "body_h": 0.835,
+        "cx": 0.448,
+        "cy": 0.192
+      },
+      {
+        "frame": 17,
+        "reason": "anomalous_stature",
+        "body_h": 0.215,
+        "cx": 0.47,
+        "cy": 0.665
+      },
+      {
+        "frame": 18,
+        "reason": "anomalous_stature",
+        "body_h": 0.269,
+        "cx": 0.45,
+        "cy": 0.632
+      },
+      {
+        "frame": 19,
+        "reason": "inverted/non-upright",
+        "body_h": 0.269,
+        "cx": 0.563,
+        "cy": 0.284
+      },
+      {
+        "frame": 21,
+        "reason": "anomalous_stature",
+        "body_h": 0.167,
+        "cx": 0.46,
+        "cy": 0.616
+      }
+    ]
+  },
+  {
+    "class": "Straight Drive",
+    "clip_name": "vid100_45.avi",
+    "valid_count": 21,
+    "missed_count": 2,
+    "missed_frames": [
+      16,
+      19
+    ],
+    "suspected_wrong_person": [
+      {
+        "frame": 15,
+        "reason": "anomalous_stature",
+        "body_h": 0.251,
+        "cx": 0.453,
+        "cy": 0.462
+      }
+    ]
+  },
+  {
+    "class": "Upper Cut",
+    "clip_name": "vid100_70.avi",
+    "valid_count": 24,
+    "missed_count": 0,
+    "missed_frames": [],
+    "suspected_wrong_person": []
+  }
+]

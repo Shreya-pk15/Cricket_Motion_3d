@@ -1,13 +1,19 @@
 """
-3D Cricket Player Pose Visualization from Monocular Video.
+3D Cricket Player Pose Visualization from Monocular Video with Real-Time Kinematics.
 Extracts 3D pose_world_landmarks using MediaPipe Tasks PoseLandmarker (CPU-only)
 and renders multi-view 3D skeletal snapshots (front, side, isometric, and combined tri-view).
-Also provides an optional interactive Matplotlib 3D viewer with mouse rotation and frame scrubbing.
+Provides an advanced interactive Matplotlib 3D viewer featuring:
+- Dual-panel synchronized view (Source 2D Frame & Interactive 3D Skeleton).
+- Real-time kinematic telemetry overlay (Elbows, Shoulders, Knees, Trunk inclination).
+- Visual highlighting of kinematic joints (vertex markers and connected limbs).
+- Play/Pause animation, timeline scrubbing slider, mouse rotation/zoom, and reset view.
+- Zero-persistence missing pose safety.
 
 Scientific & Methodological Note:
-These 3D coordinates represent estimated monocular body poses output by MediaPipe's
-pose_world_landmarks neural network. They are rooted at the player's hip midpoint in approximate
-metric units. They do NOT constitute ground-truth optical motion capture or calibrated metric 3D reconstruction.
+These 3D coordinates and calculated angles represent estimated monocular body poses output
+by MediaPipe's pose_world_landmarks neural network. They are rooted at the player's hip midpoint
+in approximate metric units. They do NOT constitute ground-truth optical motion capture or
+calibrated clinical/biomechanical reconstruction.
 """
 
 from pathlib import Path
@@ -72,9 +78,9 @@ SKELETAL_CONNECTIONS = [
     (28, 32, "right_foot"), # Ankle to Toe
     (30, 32, "right_foot"), # Heel to Toe
     # Head / Face
-    (0, 1, "head"), (1, 2, "head"), (2, 3, "head"), (3, 7, "head"), # Left eye/ear
-    (0, 4, "head"), (4, 5, "head"), (5, 6, "head"), (6, 8, "head"), # Right eye/ear
-    (9, 10, "head"), # Mouth
+    (0, 1, "head"), (1, 2, "head"), (2, 3, "head"), (3, 7, "head"),  # Left eye/ear
+    (0, 4, "head"), (4, 5, "head"), (5, 6, "head"), (6, 8, "head"),  # Right eye/ear
+    (9, 10, "head"),  # Mouth
 ]
 
 COLOR_MAP = {
@@ -89,6 +95,81 @@ COLOR_MAP = {
     "right_foot": "#64B5F6",  # Soft Blue
     "head": "#FFC107",        # Gold
 }
+
+# Key Kinematic Joint Pairs for Angle Measurement
+KINEMATIC_VERTEX_JOINTS = {13, 14, 11, 12, 25, 26}  # L/R Elbow, L/R Shoulder, L/R Knee
+
+
+def calculate_3d_angle(a: dict, b: dict, c: dict, min_vis=0.5):
+    """Computes angle at vertex B formed by rays BA and BC in degrees."""
+    if a.get("vis", 0.0) < min_vis or b.get("vis", 0.0) < min_vis or c.get("vis", 0.0) < min_vis:
+        return None
+
+    pt_a = np.array([a["x"], a["y"], a["z"]], dtype=np.float64)
+    pt_b = np.array([b["x"], b["y"], b["z"]], dtype=np.float64)
+    pt_c = np.array([c["x"], c["y"], c["z"]], dtype=np.float64)
+
+    u = pt_a - pt_b
+    v = pt_c - pt_b
+
+    norm_u = np.linalg.norm(u)
+    norm_v = np.linalg.norm(v)
+    if norm_u < 1e-6 or norm_v < 1e-6:
+        return None
+
+    cosine = np.dot(u, v) / (norm_u * norm_v)
+    cosine = np.clip(cosine, -1.0, 1.0)
+    return round(float(np.degrees(np.arccos(cosine))), 1)
+
+
+def calculate_trunk_inclination(left_hip, right_hip, left_shoulder, right_shoulder, min_vis=0.5):
+    """Angle between spinal vector and upright vertical axis [0, 1, 0] in degrees."""
+    if (left_hip.get("vis", 0.0) < min_vis or right_hip.get("vis", 0.0) < min_vis or
+            left_shoulder.get("vis", 0.0) < min_vis or right_shoulder.get("vis", 0.0) < min_vis):
+        return None
+
+    mid_hip = np.array([
+        (left_hip["x"] + right_hip["x"]) * 0.5,
+        (left_hip["y"] + right_hip["y"]) * 0.5,
+        (left_hip["z"] + right_hip["z"]) * 0.5
+    ], dtype=np.float64)
+
+    mid_shoulder = np.array([
+        (left_shoulder["x"] + right_shoulder["x"]) * 0.5,
+        (left_shoulder["y"] + right_shoulder["y"]) * 0.5,
+        (left_shoulder["z"] + right_shoulder["z"]) * 0.5
+    ], dtype=np.float64)
+
+    spine = mid_shoulder - mid_hip
+    norm_spine = np.linalg.norm(spine)
+    if norm_spine < 1e-6:
+        return None
+
+    vertical = np.array([0.0, 1.0, 0.0], dtype=np.float64)
+    cosine = np.dot(spine, vertical) / norm_spine
+    cosine = np.clip(cosine, -1.0, 1.0)
+    return round(float(np.degrees(np.arccos(cosine))), 1)
+
+
+def extract_frame_kinematics(wlm):
+    """Calculates all 7 key angles from world landmarks list."""
+    if not wlm or len(wlm) < 33:
+        return {
+            "left_elbow": None, "right_elbow": None,
+            "left_shoulder": None, "right_shoulder": None,
+            "left_knee": None, "right_knee": None,
+            "trunk_inclination": None
+        }
+
+    return {
+        "left_elbow": calculate_3d_angle(wlm[11], wlm[13], wlm[15]),
+        "right_elbow": calculate_3d_angle(wlm[12], wlm[14], wlm[16]),
+        "left_shoulder": calculate_3d_angle(wlm[23], wlm[11], wlm[13]),
+        "right_shoulder": calculate_3d_angle(wlm[24], wlm[12], wlm[14]),
+        "left_knee": calculate_3d_angle(wlm[23], wlm[25], wlm[27]),
+        "right_knee": calculate_3d_angle(wlm[24], wlm[26], wlm[28]),
+        "trunk_inclination": calculate_trunk_inclination(wlm[23], wlm[24], wlm[11], wlm[12]),
+    }
 
 
 def create_pose_detector(model_path: Path):
@@ -110,7 +191,7 @@ def extract_single_frame_world_landmarks(video_path: Path, frame_idx: int, detec
     Extracts frame image and 33 pose_world_landmarks for a given frame index.
     Returns:
         frame_bgr: numpy array
-        world_landmarks: list of dicts with x, y, z, visibility
+        world_landmarks: list of dicts with x, y, z, vis
         detected: bool
     """
     cap = cv2.VideoCapture(str(video_path))
@@ -132,21 +213,21 @@ def extract_single_frame_world_landmarks(video_path: Path, frame_idx: int, detec
         wlm = result.pose_world_landmarks[0]
         pts = []
         for p in wlm:
-            # MediaPipe world landmarks: Y points downwards in camera frame; negate Y so Y is upright
             pts.append({
                 "x": float(p.x),
-                "y": -float(p.y),
+                "y": -float(p.y),  # Negate Y so upright elevation is positive
                 "z": float(p.z),
-                "visibility": float(getattr(p, "visibility", 0.0)),
+                "vis": float(getattr(p, "visibility", 0.0)),
             })
         return frame_bgr, pts, True
     else:
         return frame_bgr, [], False
 
 
-def plot_skeleton_on_axis(ax, landmarks, view_type="isometric"):
+def plot_skeleton_on_axis(ax, landmarks, view_type="isometric", highlight_kinematics=True):
     """
     Renders 3D skeleton on a given 3D Matplotlib axis with equal scaling and specific camera angle.
+    Highlights kinematic vertex joints (elbows, shoulders, knees) with larger glowing markers.
     """
     if not landmarks:
         ax.text(0, 0, 0, "No Pose Detected", color="red", ha="center")
@@ -160,7 +241,7 @@ def plot_skeleton_on_axis(ax, landmarks, view_type="isometric"):
     for start_idx, end_idx, limb_type in SKELETAL_CONNECTIONS:
         if start_idx < len(landmarks) and end_idx < len(landmarks):
             p1, p2 = landmarks[start_idx], landmarks[end_idx]
-            v1, v2 = p1["visibility"], p2["visibility"]
+            v1, v2 = p1["vis"], p2["vis"]
             if v1 >= 0.3 and v2 >= 0.3:
                 color = COLOR_MAP.get(limb_type, "#00ADB5")
                 alpha = 0.9 if (v1 >= 0.5 and v2 >= 0.5) else 0.4
@@ -174,17 +255,30 @@ def plot_skeleton_on_axis(ax, landmarks, view_type="isometric"):
                     linewidth=lw,
                 )
 
-    # Plot landmark joints
-    joint_colors = []
-    for pt in landmarks:
-        if pt["visibility"] >= 0.5:
-            joint_colors.append("#00FF66")  # Green for high confidence
-        elif pt["visibility"] >= 0.3:
-            joint_colors.append("#FFAA00")  # Orange for moderate confidence
-        else:
-            joint_colors.append("#555555")  # Dark grey for low confidence
+    # Plot spinal line if hips and shoulders visible
+    if (landmarks[11]["vis"] >= 0.5 and landmarks[12]["vis"] >= 0.5 and
+            landmarks[23]["vis"] >= 0.5 and landmarks[24]["vis"] >= 0.5):
+        mid_sh_x = (landmarks[11]["x"] + landmarks[12]["x"]) * 0.5
+        mid_sh_z = (landmarks[11]["z"] + landmarks[12]["z"]) * 0.5
+        mid_sh_y = (landmarks[11]["y"] + landmarks[12]["y"]) * 0.5
+        mid_hip_x = (landmarks[23]["x"] + landmarks[24]["x"]) * 0.5
+        mid_hip_z = (landmarks[23]["z"] + landmarks[24]["z"]) * 0.5
+        mid_hip_y = (landmarks[23]["y"] + landmarks[24]["y"]) * 0.5
+        ax.plot([mid_hip_x, mid_sh_x], [mid_hip_z, mid_sh_z], [mid_hip_y, mid_sh_y],
+                color="#00FFFF", linestyle="--", linewidth=1.8, alpha=0.85, label="Spine (Trunk)")
 
-    ax.scatter(xs, ys, zs, c=joint_colors, s=18, depthshade=True, edgecolors="#111111", linewidths=0.5)
+    # Plot standard joint landmark nodes
+    for idx, pt in enumerate(landmarks):
+        vis = pt["vis"]
+        if idx in KINEMATIC_VERTEX_JOINTS and highlight_kinematics:
+            # Highlight vertex joint
+            v_color = "#FF0055" if vis >= 0.5 else "#882244"
+            ax.scatter([pt["x"]], [pt["z"]], [pt["y"]], c=[v_color], s=55,
+                       depthshade=False, edgecolors="#FFFFFF", linewidths=1.2, zorder=10)
+        else:
+            dot_color = "#00FF66" if vis >= 0.5 else ("#FFAA00" if vis >= 0.3 else "#555555")
+            ax.scatter([pt["x"]], [pt["z"]], [pt["y"]], c=[dot_color], s=18,
+                       depthshade=True, edgecolors="#111111", linewidths=0.5)
 
     # Enforce strictly equal aspect ratio
     max_range = np.array([
@@ -230,7 +324,7 @@ def render_tri_view_snapshot(frame_bgr, landmarks, clip_class, clip_name, frame_
     - Panel 1: Original RGB 2D Video Frame
     - Panel 2: Front View 3D Skeleton
     - Panel 3: Side View 3D Skeleton
-    - Panel 4: Isometric 3D Skeleton
+    - Panel 4: Isometric 3D Skeleton with Kinematic Readouts
     """
     fig = plt.figure(figsize=(16, 4.8), facecolor="#121212")
 
@@ -281,15 +375,16 @@ def render_single_view_snapshot(landmarks, clip_class, clip_name, frame_idx, vie
 
 def run_interactive_viewer(video_path: Path, detector):
     """
-    Advanced dual-panel interactive 3D Matplotlib viewer with widget controls.
+    Advanced dual-panel interactive 3D Matplotlib viewer with widget controls & Kinematic Telemetry.
     Features:
       - Left Panel: Original Video Frame with shot class, frame index, and status badge.
-      - Right Panel: 3D Skeleton when pose is detected; clear 'No Pose Detected' overlay when missed.
+      - Right Panel: 3D Skeleton with highlighted kinematic joints.
+      - Kinematic Telemetry Panel: Real-time readouts of elbow, shoulder, knee, and trunk angles.
       - Slider: Interactive timeline slider to scrub to any frame in real-time.
       - Play/Pause Button: Automatically advances playback through the clip at ~10-15 FPS.
       - Reset View Button: Restores default isometric camera perspective (elev=20, azim=-45).
       - Camera Angle Preservation: Retains user's custom mouse rotation and zoom across frame changes.
-      - Missing Pose Safety: Never persists or reuses a previous frame's skeleton.
+      - Missing Pose Safety: Never persists or reuses a previous frame's skeleton or angles.
       - Keyboard Shortcuts: Left/Right = scrub, Space = play/pause, R = reset view.
     """
     from matplotlib.widgets import Slider, Button
@@ -305,14 +400,14 @@ def run_interactive_viewer(video_path: Path, detector):
     if total_frames <= 0:
         raise RuntimeError(f"Cannot read video: {video_path}")
 
-    # Pre-extract frames and world landmarks into memory for fluid interactive scrubbing
-    print(f"[INFO] Pre-caching {total_frames} frames for zero-latency scrubbing & playback...")
+    # Pre-extract frames, world landmarks, and kinematics into memory for zero latency
+    print(f"[INFO] Pre-caching {total_frames} frames & calculating 3D kinematics...")
     cache = []
     cap = cv2.VideoCapture(str(video_path))
     for f_idx in range(total_frames):
         ret, frame_bgr = cap.read()
         if not ret or frame_bgr is None:
-            cache.append((None, [], False))
+            cache.append((None, [], False, {}))
             continue
         frame_rgb = cv2.cvtColor(frame_bgr, cv2.COLOR_BGR2RGB)
         mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame_rgb)
@@ -323,28 +418,32 @@ def run_interactive_viewer(video_path: Path, detector):
                     "x": float(p.x),
                     "y": -float(p.y),
                     "z": float(p.z),
-                    "visibility": float(getattr(p, "visibility", 0.0)),
+                    "vis": float(getattr(p, "visibility", 0.0)),
                 }
                 for p in result.pose_world_landmarks[0]
             ]
-            cache.append((frame_bgr, pts, True))
+            angles = extract_frame_kinematics(pts)
+            cache.append((frame_bgr, pts, True, angles))
         else:
-            cache.append((frame_bgr, [], False))
+            cache.append((frame_bgr, [], False, {}))
     cap.release()
     print(f"[INFO] Caching complete. Valid poses: {sum(1 for c in cache if c[2])}/{total_frames}")
 
-    # Set up Matplotlib figure with control widget margins
-    fig = plt.figure(figsize=(14, 7.2), facecolor="#141414")
-    fig.canvas.manager.set_window_title(f"Cricket 3D Pose Viewer — {shot_class} ({clip_name})")
+    # Set up Matplotlib figure with control widget margins and telemetry column
+    fig = plt.figure(figsize=(15.5, 7.5), facecolor="#141414")
+    fig.canvas.manager.set_window_title(f"Cricket 3D Pose & Kinematics Viewer — {shot_class} ({clip_name})")
 
-    # Leave bottom margin for Slider & Buttons
-    ax_img = fig.add_axes([0.05, 0.20, 0.42, 0.70])
-    ax_3d = fig.add_axes([0.52, 0.18, 0.45, 0.74], projection="3d")
+    # Layout axes
+    # [left, bottom, width, height]
+    ax_img = fig.add_axes([0.04, 0.22, 0.36, 0.68])
+    ax_3d = fig.add_axes([0.42, 0.20, 0.38, 0.72], projection="3d")
+    ax_telem = fig.add_axes([0.81, 0.22, 0.17, 0.68], facecolor="#1A1D24")
+    ax_telem.axis("off")
 
     # Widget Axes
-    ax_slider = fig.add_axes([0.15, 0.07, 0.52, 0.04], facecolor="#242424")
-    ax_play = fig.add_axes([0.70, 0.065, 0.12, 0.05], facecolor="#2C3E50")
-    ax_reset = fig.add_axes([0.84, 0.065, 0.11, 0.05], facecolor="#34495E")
+    ax_slider = fig.add_axes([0.10, 0.08, 0.50, 0.04], facecolor="#242424")
+    ax_play = fig.add_axes([0.63, 0.075, 0.11, 0.05], facecolor="#2C3E50")
+    ax_reset = fig.add_axes([0.76, 0.075, 0.11, 0.05], facecolor="#34495E")
 
     # Interactive Widgets
     slider = Slider(
@@ -378,10 +477,13 @@ def run_interactive_viewer(video_path: Path, detector):
     cam_elev = 20.0
     cam_azim = -45.0
 
+    def format_angle(val):
+        return f"{val:.1f}°" if val is not None else "N/A"
+
     def render_frame(f_idx, reset_camera=False):
         nonlocal cam_elev, cam_azim
         f_idx = int(f_idx)
-        frame_bgr, wlm, detected = cache[f_idx]
+        frame_bgr, wlm, detected, angles = cache[f_idx]
 
         # Preserve user's interactive rotation unless explicit reset is requested
         if not reset_camera and ax_3d.azim is not None and ax_3d.elev is not None:
@@ -390,6 +492,8 @@ def run_interactive_viewer(video_path: Path, detector):
 
         ax_img.cla()
         ax_3d.cla()
+        ax_telem.cla()
+        ax_telem.axis("off")
 
         # 1. Left Panel: Original Video Frame
         if frame_bgr is not None:
@@ -407,9 +511,9 @@ def run_interactive_viewer(video_path: Path, detector):
             pad=8
         )
 
-        # 2. Right Panel: 3D Pose
+        # 2. Right Panel: 3D Pose with Kinematic Highlighting
         if detected and wlm:
-            plot_skeleton_on_axis(ax_3d, wlm, view_type="isometric")
+            plot_skeleton_on_axis(ax_3d, wlm, view_type="isometric", highlight_kinematics=True)
             ax_3d.view_init(elev=cam_elev, azim=cam_azim)
             ax_3d.set_title(
                 f"Estimated Monocular 3D Skeleton (m)\nFrame #{f_idx} (Elev: {int(cam_elev)}°, Azim: {int(cam_azim)}°)",
@@ -444,9 +548,40 @@ def run_interactive_viewer(video_path: Path, detector):
                 pad=8
             )
 
+        # 3. Third Panel: Real-Time Kinematic Telemetry Card
+        ax_telem.set_facecolor("#1A1D24")
+        telem_title = "KINEMATIC TELEMETRY"
+        ax_telem.text(0.5, 0.94, telem_title, color="#00FFCC", fontsize=10.5, weight="bold", ha="center")
+        ax_telem.text(0.5, 0.88, f"[Frame #{f_idx} Angles]", color="#AAAAAA", fontsize=9, ha="center")
+        ax_telem.axhline(0.85, color="#333A48", linewidth=1.2)
+
+        if detected and angles:
+            y_pos = 0.77
+            metrics_display = [
+                ("L Elbow Flexion:", format_angle(angles.get("left_elbow")), "#FF5722"),
+                ("R Elbow Flexion:", format_angle(angles.get("right_elbow")), "#4CAF50"),
+                ("L Shoulder Angle:", format_angle(angles.get("left_shoulder")), "#FF9800"),
+                ("R Shoulder Angle:", format_angle(angles.get("right_shoulder")), "#8BC34A"),
+                ("L Knee Flexion:", format_angle(angles.get("left_knee")), "#E91E63"),
+                ("R Knee Flexion:", format_angle(angles.get("right_knee")), "#2196F3"),
+                ("Trunk Inclination:", format_angle(angles.get("trunk_inclination")), "#00ADB5"),
+            ]
+            for label_name, val_str, col in metrics_display:
+                ax_telem.text(0.06, y_pos, label_name, color="#D0D5DD", fontsize=8.8)
+                ax_telem.text(0.94, y_pos, val_str, color=col, fontsize=9.2, weight="bold", ha="right")
+                y_pos -= 0.088
+
+            ax_telem.axhline(0.18, color="#333A48", linewidth=1.0)
+            ax_telem.text(0.5, 0.12, "● Magenta Nodes = Vertex Joints\n--- Cyan Dashed = Spinal Axis",
+                          color="#8892B0", fontsize=7.6, ha="center")
+            ax_telem.text(0.5, 0.04, "[Monocular Approximation]", color="#666F88", fontsize=7.2, ha="center")
+        else:
+            ax_telem.text(0.5, 0.55, "NO KINEMATICS\nAVAILABLE", color="#FF5555", fontsize=11, weight="bold", ha="center")
+            ax_telem.text(0.5, 0.45, "Pose landmarks not detected.\nNo stale angles displayed.", color="#888888", fontsize=8, ha="center")
+
         # Master Super Title
         fig.suptitle(
-            f"Cricket 3D Pose Viewer — {shot_class} ({clip_name})  |  [Space] Play/Pause  [Arrows] Step  [Drag] Rotate 3D  [R] Reset View",
+            f"Cricket 3D Pose & Kinematics Viewer — {shot_class} ({clip_name})  |  [Space] Play/Pause  [Arrows] Step  [Drag] Rotate 3D  [R] Reset View",
             color="#EAEAEA",
             fontsize=11,
             y=0.97
@@ -519,7 +654,7 @@ def run_interactive_viewer(video_path: Path, detector):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Cricket 3D Pose Visualizer")
+    parser = argparse.ArgumentParser(description="Cricket 3D Pose Visualizer with Kinematics")
     parser.add_argument("--interactive", action="store_true", help="Launch interactive 3D Matplotlib viewer")
     parser.add_argument("--clip", type=str, default=None, help="Relative clip path for interactive viewer (e.g. outputs/sample_clips/Pull/vid100_29.avi)")
     args = parser.parse_args()

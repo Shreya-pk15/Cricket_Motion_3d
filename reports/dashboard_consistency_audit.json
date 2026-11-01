@@ -1,0 +1,78 @@
+{
+  "audit_metadata": {
+    "audit_title": "Dashboard-to-Experiment Consistency Audit",
+    "project": "Cricket3D_Motion",
+    "timestamp": "2026-11-01T12:34:00+05:30",
+    "hardware_mode": "CPU-Only (x86_64, Windows)",
+    "target_file": "app.py",
+    "benchmark_reports_used": [
+      "reports/corrected_batter_selection_evaluation.json",
+      "reports/corrected_batter_selection_summary.json",
+      "reports/corrected_batter_joint_angle_analysis.json",
+      "reports/phase7_validation_audit.json"
+    ]
+  },
+  "overall_status": "PASS",
+  "executive_summary": "All approved corrections have been implemented in app.py. The dashboard now exclusively loads the corrected batter-isolated reports. In Tab 1, hardcoded preliminary KPI cards were replaced with dynamic values directly mapped from the corrected reports, and the uniform grid description was corrected to [0, 5, 9, 14, 18, 23]. In Tab 4, the default ROI sliders are set to (0.30, 0.70) and (0.20, 0.88). In Tab 5, kinematic trajectories and per-clip metrics use the corrected batter-isolated kinematics. In Tab 6, summary tables, bar charts, and takeaways display the verified experimental results, stating that Uniform sampling leads on aggregate accuracy across the 12 pilot clips while Hybrid maintains full temporal coverage.",
+  "verified_aggregate_benchmarks": {
+    "uniform": {
+      "detection_rate_pct": 97.22,
+      "mean_visibility": 0.7991,
+      "temporal_span_ratio": 1.0000,
+      "max_gap": 5.00,
+      "nspe": 0.0414,
+      "kinematic_mae_deg": 12.27,
+      "extrema_gap_deg": 10.94
+    },
+    "motion_aware": {
+      "detection_rate_pct": 93.06,
+      "mean_visibility": 0.8070,
+      "temporal_span_ratio": 0.8188,
+      "max_gap": 5.58,
+      "nspe": 0.0437,
+      "kinematic_mae_deg": 12.36,
+      "extrema_gap_deg": 15.12
+    },
+    "hybrid": {
+      "detection_rate_pct": 91.67,
+      "mean_visibility": 0.8046,
+      "temporal_span_ratio": 1.0000,
+      "max_gap": 7.75,
+      "nspe": 0.0466,
+      "kinematic_mae_deg": 13.29,
+      "extrema_gap_deg": 13.95
+    }
+  },
+  "section_audits": {
+    "tab_1_overview": {
+      "section_name": "Overview & Experimental Methodology",
+      "status": "PASS",
+      "findings": "Hardcoded KPI cards replaced with dynamic values mapped from corrected_batter_selection_summary.json and corrected_batter_joint_angle_analysis.json. Uniform grid formula updated to [0, 5, 9, 14, 18, 23]. Disclaimer explicitly states 12 pilot clips / 288 reference frames."
+    },
+    "tab_2_video_selection": {
+      "section_name": "Video Selection & Gallery",
+      "status": "PASS",
+      "findings": "All 12 clips across 10 shot classes available. Dropdown and gallery update metadata and keyframe timeline strips correctly."
+    },
+    "tab_3_frame_selection": {
+      "section_name": "Comparative Frame Selection: 6-Frame Budget",
+      "status": "PASS",
+      "findings": "Now loaded from corrected_batter_selection_evaluation.json. Selected frames match verified indices (e.g. Cover Drive U=[0,5,9,14,18,23], M=[1,7,9,14,16,20], H=[0,7,12,14,16,23]). Detection counts and NSPE correspond to isolated batter detections."
+    },
+    "tab_4_3d_pose_viewer": {
+      "section_name": "Interactive 3D Pose & Kinematics Viewer",
+      "status": "PASS",
+      "findings": "Default ROI sliders set to (0.30, 0.70) and (0.20, 0.88), matching the validated crease crop. All 8 camera presets functional with aspectmode='cube'. Live kinematic telemetry displays angles and occluded Null statuses without stale propagation."
+    },
+    "tab_5_kinematics": {
+      "section_name": "Kinematic Angle Trajectories",
+      "status": "PASS",
+      "findings": "24-frame reference angle curves and method subsample overlays loaded from corrected_batter_joint_angle_analysis.json. Per-clip Mean Joint MAE, Min Extrema Error, and Max Extrema Error computed dynamically from the 7 joint angles."
+    },
+    "tab_6_method_comparison": {
+      "section_name": "Comprehensive Benchmark Across All 12 Clips",
+      "status": "PASS",
+      "findings": "Summary table and Plotly bar charts display verified benchmarks. Analytical takeaways honestly explain that Uniform sampling leads overall accuracy metrics (12.27 deg MAE, 10.94 deg Extrema Gap) while Hybrid prevents temporal boundary truncation (1.00 vs 0.82 span ratio). 12-clip pilot scope clearly stated."
+    }
+  }
+}

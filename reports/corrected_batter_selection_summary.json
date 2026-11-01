@@ -1,0 +1,222 @@
+{
+  "pilot_scope": {
+    "total_clips": 12,
+    "total_reference_frames": 288,
+    "evaluation_type": "Corrected Batter-Specific Crease Isolation (CPU-Only)",
+    "disclaimer": "Evaluated strictly on the isolated batsman within the batting crease region. Eliminates foreground bowler and background identity switches."
+  },
+  "aggregate_comparison": {
+    "reference_sequence": {
+      "total_frames": 288,
+      "total_detected_frames": 274,
+      "mean_detection_rate_pct": 95.14,
+      "mean_landmark_visibility": 0.8053
+    },
+    "uniform": {
+      "mean_detection_rate_pct": 97.22,
+      "mean_landmark_visibility": 0.7991,
+      "mean_temporal_span_ratio": 1.0,
+      "mean_max_temporal_gap_frames": 5.0,
+      "mean_nearest_pose_error_nspe": 0.0414,
+      "total_unmatched_ref_frames": 0
+    },
+    "motion_aware": {
+      "mean_detection_rate_pct": 93.06,
+      "mean_landmark_visibility": 0.807,
+      "mean_temporal_span_ratio": 0.8188,
+      "mean_max_temporal_gap_frames": 5.58,
+      "mean_nearest_pose_error_nspe": 0.0437,
+      "total_unmatched_ref_frames": 0
+    },
+    "hybrid": {
+      "mean_detection_rate_pct": 91.67,
+      "mean_landmark_visibility": 0.8046,
+      "mean_temporal_span_ratio": 1.0,
+      "mean_max_temporal_gap_frames": 7.75,
+      "mean_nearest_pose_error_nspe": 0.0466,
+      "total_unmatched_ref_frames": 0
+    }
+  },
+  "per_class_comparison": {
+    "Cover Drive": {
+      "num_clips": 2,
+      "uniform": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.821,
+        "mean_nspe": 0.0371
+      },
+      "motion_aware": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.79,
+        "mean_nspe": 0.0335
+      },
+      "hybrid": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.81,
+        "mean_nspe": 0.0337
+      }
+    },
+    "Defensive": {
+      "num_clips": 2,
+      "uniform": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.838,
+        "mean_nspe": 0.0145
+      },
+      "motion_aware": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.853,
+        "mean_nspe": 0.016
+      },
+      "hybrid": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.836,
+        "mean_nspe": 0.0185
+      }
+    },
+    "Flick": {
+      "num_clips": 1,
+      "uniform": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.835,
+        "mean_nspe": 0.0595
+      },
+      "motion_aware": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.874,
+        "mean_nspe": 0.0421
+      },
+      "hybrid": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.83,
+        "mean_nspe": 0.0726
+      }
+    },
+    "Hook": {
+      "num_clips": 1,
+      "uniform": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.802,
+        "mean_nspe": 0.018
+      },
+      "motion_aware": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.767,
+        "mean_nspe": 0.0184
+      },
+      "hybrid": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.761,
+        "mean_nspe": 0.0173
+      }
+    },
+    "Late Cut": {
+      "num_clips": 1,
+      "uniform": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.709,
+        "mean_nspe": 0.0657
+      },
+      "motion_aware": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.844,
+        "mean_nspe": 0.0456
+      },
+      "hybrid": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.748,
+        "mean_nspe": 0.0951
+      }
+    },
+    "Pull": {
+      "num_clips": 1,
+      "uniform": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.782,
+        "mean_nspe": 0.0253
+      },
+      "motion_aware": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.758,
+        "mean_nspe": 0.0281
+      },
+      "hybrid": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.792,
+        "mean_nspe": 0.03
+      }
+    },
+    "Reverse Sweep": {
+      "num_clips": 1,
+      "uniform": {
+        "detection_rate_pct": 83.3,
+        "mean_visibility": 0.844,
+        "mean_nspe": 0.0637
+      },
+      "motion_aware": {
+        "detection_rate_pct": 83.3,
+        "mean_visibility": 0.842,
+        "mean_nspe": 0.0545
+      },
+      "hybrid": {
+        "detection_rate_pct": 66.7,
+        "mean_visibility": 0.879,
+        "mean_nspe": 0.0786
+      }
+    },
+    "Scoop": {
+      "num_clips": 1,
+      "uniform": {
+        "detection_rate_pct": 83.3,
+        "mean_visibility": 0.782,
+        "mean_nspe": 0.0723
+      },
+      "motion_aware": {
+        "detection_rate_pct": 50.0,
+        "mean_visibility": 0.776,
+        "mean_nspe": 0.1319
+      },
+      "hybrid": {
+        "detection_rate_pct": 50.0,
+        "mean_visibility": 0.829,
+        "mean_nspe": 0.0909
+      }
+    },
+    "Straight Drive": {
+      "num_clips": 1,
+      "uniform": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.771,
+        "mean_nspe": 0.0582
+      },
+      "motion_aware": {
+        "detection_rate_pct": 83.3,
+        "mean_visibility": 0.763,
+        "mean_nspe": 0.0731
+      },
+      "hybrid": {
+        "detection_rate_pct": 83.3,
+        "mean_visibility": 0.8,
+        "mean_nspe": 0.0341
+      }
+    },
+    "Upper Cut": {
+      "num_clips": 1,
+      "uniform": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.749,
+        "mean_nspe": 0.0314
+      },
+      "motion_aware": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.773,
+        "mean_nspe": 0.0322
+      },
+      "hybrid": {
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.725,
+        "mean_nspe": 0.0364
+      }
+    }
+  }
+}

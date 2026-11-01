@@ -1,1 +1,3 @@
 CricShot10k_ Shot Dataset/*.rar
+__pycache__/
+*.py[cod]

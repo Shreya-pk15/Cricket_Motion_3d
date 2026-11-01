@@ -1,0 +1,76 @@
+{
+  "audit_metadata": {
+    "audit_phase": "Phase 7 - Independent Validation of Corrected Batter-Specific Results",
+    "project": "Cricket3D_Motion",
+    "timestamp": "2026-11-01T12:22:00+05:30",
+    "hardware_mode": "CPU-Only (x86_64, Windows)",
+    "scope": "Validation of Phase 6 batter crease crop evaluation, 2D/3D coordinate transformations, metric calculations, and reproducibility."
+  },
+  "overall_verdict": {
+    "status": "PASS_WITH_WARNINGS",
+    "summary": "Phase 6 successfully isolated the batter and eliminated foreground bowler tracking across all 12 clips. Coordinate remapping and metric calculations are mathematically sound and 100% reproducible. However, methodological limitations remain regarding static ROI boundary clipping for extreme crouch shots and the fact that Uniform sampling outperforms Hybrid on this 12-clip benchmark."
+  },
+  "checklist": {
+    "1_batter_identity_validation": {
+      "status": "PASS",
+      "reference_frames_audited": 288,
+      "valid_batter_detections": 274,
+      "detection_rate_pct": 95.14,
+      "suspected_wrong_person_count": 0,
+      "missed_detections_count": 14,
+      "anomalous_or_partial_stature_frames_count": 16,
+      "findings": "Zero instances of identity switching to the bowler or umpire. In 14 frames, MediaPipe missed detection entirely due to motion blur or deep crouching. In 16 frames (predominantly in Scoop and Reverse Sweep), the batter was partially cropped by the static ROI boundaries (e.g. lower legs cut off), resulting in low 3D body height (< 0.40m) without switching identity."
+    },
+    "2_coordinate_and_3d_validation": {
+      "status": "PASS",
+      "linear_2d_remapping": "VALID: x_full = rx1 + x_crop*(rx2-rx1); y_full = ry1 + y_crop*(ry2-ry1)",
+      "3d_world_landmarks_handling": "VALID: MediaPipe pose_world_landmarks are in a metric hip-centered coordinate system independent of 2D image pixel scales. No 2D affine remapping is erroneously applied to 3D world space.",
+      "aspect_ratio_invariance": "VALID: 3D Euclidean joint angles (vectors between 3D joint points) and vertical trunk inclination are scale- and translation-invariant. MediaPipe internal square letterboxing preserves metric joint angles."
+    },
+    "3_metric_audit": {
+      "status": "PASS",
+      "nspe_formula": "Verified mean Euclidean distance over mutually visible joints (vis >= 0.5) to nearest valid selected frame.",
+      "kinematic_mae_formula": "Verified mean absolute error against valid reference frames.",
+      "extrema_gap_formula": "Verified absolute difference between reference min/max and selected subset min/max.",
+      "settings_consistency": "Verified: Uniform, Motion-Aware, and Hybrid evaluate against the exact same crease-cropped reference sequence."
+    },
+    "4_result_reproducibility": {
+      "status": "PASS",
+      "numerical_recalculation_delta": 0.0,
+      "uniform_metrics": {
+        "detection_rate_pct": 97.22,
+        "mean_visibility": 0.7991,
+        "temporal_span_ratio": 1.0,
+        "mean_max_gap": 5.0,
+        "nspe": 0.0414,
+        "kinematic_mae_deg": 12.27,
+        "extrema_gap_deg": 10.94
+      },
+      "motion_aware_metrics": {
+        "detection_rate_pct": 93.06,
+        "mean_visibility": 0.8070,
+        "temporal_span_ratio": 0.8188,
+        "mean_max_gap": 5.58,
+        "nspe": 0.0437,
+        "kinematic_mae_deg": 12.36,
+        "extrema_gap_deg": 15.12
+      },
+      "hybrid_metrics": {
+        "detection_rate_pct": 91.67,
+        "mean_visibility": 0.8046,
+        "temporal_span_ratio": 1.0,
+        "mean_max_gap": 7.75,
+        "nspe": 0.0466,
+        "kinematic_mae_deg": 13.29,
+        "extrema_gap_deg": 13.95
+      }
+    },
+    "5_research_integrity_and_claim_validation": {
+      "status": "WARNING",
+      "hybrid_superiority_claim": "UNSUPPORTED ON BENCHMARK: Uniform sampling achieves lower NSPE (0.0414 vs 0.0466), lower Kinematic MAE (12.27 deg vs 13.29 deg), and lower Extrema Gap (10.94 deg vs 13.95 deg) than Hybrid across the 12 pilot clips.",
+      "scientific_interpretation": "Hybrid guarantees full temporal boundaries (1.00 span ratio) while allocating budget to motion peaks, but uniform sampling distributes frames with perfectly balanced inter-frame spacing (gap=5.0 vs 7.75), yielding superior trajectory approximation on smoothly moving 24-frame clips.",
+      "recommendation_for_paper": "Frame Hybrid as an adaptive budget allocation strategy that preserves boundaries, rather than claiming unconditional empirical superiority over uniform sampling."
+    }
+  }
+}
+

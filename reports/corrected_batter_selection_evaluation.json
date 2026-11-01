@@ -1,0 +1,7044 @@
+[
+  {
+    "clip_name": "vid100_41.avi",
+    "class": "Cover Drive",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 23,
+      "detection_rate_pct": 95.83,
+      "mean_visibility": 0.7981,
+      "missed_frames": [
+        10
+      ]
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8198,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0517,
+          "median_nspe": 0.0188,
+          "matched_ref_frames": 23,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 16,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 13,
+            "error": 0.1785
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 13,
+            "error": 0.1815
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 13,
+            "error": 0.5066
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0119
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0097
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0136
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0113
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0329
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0279
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 23,
+            "error": 0.0189
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0188
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0383
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0188
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0213
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 18,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0369
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.039
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0231
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          1,
+          7,
+          9,
+          14,
+          16,
+          20
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7948,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.8261,
+          "min_frame": 1,
+          "max_frame": 20,
+          "max_gap": 6,
+          "mean_gap": 3.8
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0445,
+          "median_nspe": 0.018,
+          "matched_ref_frames": 23,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 1,
+            "temporal_distance": 1,
+            "num_visible_joints": 13,
+            "error": 0.1785
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 1,
+            "temporal_distance": 0,
+            "num_visible_joints": 13,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 1,
+            "temporal_distance": 1,
+            "num_visible_joints": 13,
+            "error": 0.0081
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 1,
+            "temporal_distance": 2,
+            "num_visible_joints": 13,
+            "error": 0.0171
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 1,
+            "temporal_distance": 3,
+            "num_visible_joints": 13,
+            "error": 0.4949
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0136
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.013
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.011
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0329
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0279
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 23,
+            "error": 0.0189
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0188
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0222
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0352
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0265
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 20,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.018
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 20,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0345
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 20,
+            "temporal_distance": 3,
+            "num_visible_joints": 32,
+            "error": 0.0516
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          7,
+          12,
+          14,
+          16,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8031,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 7,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0392,
+          "median_nspe": 0.0188,
+          "matched_ref_frames": 23,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 16,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 13,
+            "error": 0.1785
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 13,
+            "error": 0.1815
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 13,
+            "error": 0.187
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 7,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0196
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0136
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.013
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.011
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0155
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0462
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 23,
+            "error": 0.0103
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0188
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0222
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0352
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 16,
+            "temporal_distance": 3,
+            "num_visible_joints": 32,
+            "error": 0.0345
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 23,
+            "temporal_distance": 3,
+            "num_visible_joints": 32,
+            "error": 0.0516
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.039
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0231
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "clip_name": "vid100_60.avi",
+    "class": "Cover Drive",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 24,
+      "detection_rate_pct": 100.0,
+      "mean_visibility": 0.8051,
+      "missed_frames": []
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8216,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0225,
+          "median_nspe": 0.019,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.007
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0155
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.03
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0163
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0184
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0391
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0212
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0177
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0299
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.0197
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.0167
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 25,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.0317
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.0597
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.055
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.044
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 18,
+            "temporal_distance": 2,
+            "num_visible_joints": 24,
+            "error": 0.0713
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 24,
+            "error": 0.0269
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0195
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 30,
+            "error": 0.0
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          3,
+          6,
+          8,
+          12,
+          16,
+          20
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.786,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.7391,
+          "min_frame": 3,
+          "max_frame": 20,
+          "max_gap": 4,
+          "mean_gap": 3.4
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0226,
+          "median_nspe": 0.0191,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 3,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0276
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 3,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.021
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0166
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 3,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0141
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0184
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 6,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.022
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 8,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0212
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 8,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0384
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0117
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 24,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 21,
+            "error": 0.0076
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.0197
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0338
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0645
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.119
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0322
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 20,
+            "temporal_distance": 0,
+            "num_visible_joints": 24,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0175
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 20,
+            "temporal_distance": 2,
+            "num_visible_joints": 24,
+            "error": 0.0225
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 20,
+            "temporal_distance": 3,
+            "num_visible_joints": 24,
+            "error": 0.034
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          6,
+          8,
+          12,
+          16,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8171,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 7,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0282,
+          "median_nspe": 0.0196,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.007
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0155
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0276
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 6,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.034
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0184
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 6,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.022
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 8,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0212
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 8,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0384
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0117
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 24,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 21,
+            "error": 0.0076
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.0197
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0338
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0645
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.119
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 16,
+            "temporal_distance": 3,
+            "num_visible_joints": 26,
+            "error": 0.1571
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 23,
+            "temporal_distance": 3,
+            "num_visible_joints": 24,
+            "error": 0.034
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 24,
+            "error": 0.0269
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0195
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 30,
+            "error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "clip_name": "vid100_0.avi",
+    "class": "Defensive",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 24,
+      "detection_rate_pct": 100.0,
+      "mean_visibility": 0.8506,
+      "missed_frames": []
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8658,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.015,
+          "median_nspe": 0.016,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 29,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0121
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 29,
+            "error": 0.02
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0237
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0121
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0137
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0244
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 29,
+            "error": 0.0258
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0208
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 31,
+            "error": 0.027
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.0294
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0158
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0159
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0239
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0124
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.016
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 18,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0238
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.026
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0176
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          0,
+          7,
+          10,
+          12,
+          16,
+          22
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8501,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.9565,
+          "min_frame": 0,
+          "max_frame": 22,
+          "max_gap": 7,
+          "mean_gap": 4.4
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0155,
+          "median_nspe": 0.0181,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 29,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0121
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 29,
+            "error": 0.02
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 29,
+            "error": 0.0229
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 7,
+            "temporal_distance": 3,
+            "num_visible_joints": 28,
+            "error": 0.0356
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0244
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0207
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0226
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 10,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0208
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 10,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 10,
+            "temporal_distance": 1,
+            "num_visible_joints": 31,
+            "error": 0.0128
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0119
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.0294
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0186
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0137
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0211
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 16,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0282
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 22,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0242
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 22,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0144
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 22,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 22,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0176
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          7,
+          12,
+          13,
+          16,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8414,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 7,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0171,
+          "median_nspe": 0.0193,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 29,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0121
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 29,
+            "error": 0.02
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 29,
+            "error": 0.0229
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 7,
+            "temporal_distance": 3,
+            "num_visible_joints": 28,
+            "error": 0.0356
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0244
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0207
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0226
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0437
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.0209
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 31,
+            "error": 0.0135
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 13,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 13,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0158
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0186
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0137
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0211
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 16,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0282
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 23,
+            "temporal_distance": 3,
+            "num_visible_joints": 28,
+            "error": 0.0318
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.026
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0176
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "clip_name": "vid100_14.avi",
+    "class": "Defensive",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 24,
+      "detection_rate_pct": 100.0,
+      "mean_visibility": 0.8447,
+      "missed_frames": []
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8097,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.014,
+          "median_nspe": 0.0144,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0063
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0133
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0196
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0122
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 31,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 31,
+            "error": 0.0146
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 31,
+            "error": 0.0214
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0138
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0092
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.017
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0265
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0155
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0142
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0274
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0238
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.017
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 18,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.026
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 24,
+            "error": 0.0339
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.023
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 24,
+            "error": 0.0
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          0,
+          6,
+          11,
+          12,
+          16,
+          22
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8554,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.9565,
+          "min_frame": 0,
+          "max_frame": 22,
+          "max_gap": 6,
+          "mean_gap": 4.4
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0165,
+          "median_nspe": 0.0158,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0063
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0133
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 26,
+            "error": 0.0234
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 6,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0195
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 31,
+            "error": 0.0146
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 6,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0094
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 6,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.022
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 11,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.017
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 11,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.009
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 11,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 31,
+            "error": 0.0138
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0265
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0172
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.024
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0438
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 16,
+            "temporal_distance": 3,
+            "num_visible_joints": 26,
+            "error": 0.0609
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 22,
+            "temporal_distance": 2,
+            "num_visible_joints": 29,
+            "error": 0.0341
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 22,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0191
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 22,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 22,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.023
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          6,
+          11,
+          12,
+          22,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.831,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 10,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0199,
+          "median_nspe": 0.0158,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0063
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0133
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 26,
+            "error": 0.0234
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 6,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0195
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 31,
+            "error": 0.0146
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 6,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0094
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 6,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.022
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 11,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.017
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 11,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.009
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 11,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 31,
+            "error": 0.0138
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0265
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 12,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0393
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 12,
+            "temporal_distance": 4,
+            "num_visible_joints": 28,
+            "error": 0.0473
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 12,
+            "temporal_distance": 5,
+            "num_visible_joints": 26,
+            "error": 0.06
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 22,
+            "temporal_distance": 4,
+            "num_visible_joints": 27,
+            "error": 0.0594
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 22,
+            "temporal_distance": 3,
+            "num_visible_joints": 26,
+            "error": 0.0433
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 22,
+            "temporal_distance": 2,
+            "num_visible_joints": 29,
+            "error": 0.0341
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 22,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0191
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 22,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 24,
+            "error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "clip_name": "vid100_38.avi",
+    "class": "Flick",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 24,
+      "detection_rate_pct": 100.0,
+      "mean_visibility": 0.887,
+      "missed_frames": []
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8347,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0595,
+          "median_nspe": 0.0247,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 21,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 21,
+            "error": 0.3664
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.3589
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 29,
+            "error": 0.0147
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 29,
+            "error": 0.0119
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 29,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 29,
+            "error": 0.025
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 29,
+            "error": 0.0317
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0584
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 30,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0796
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.0977
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0708
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0207
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 31,
+            "error": 0.066
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.0676
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 31,
+            "error": 0.0223
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 31,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0227
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 18,
+            "temporal_distance": 2,
+            "num_visible_joints": 31,
+            "error": 0.0404
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0486
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0244
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          3,
+          7,
+          8,
+          12,
+          16,
+          20
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8742,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.7391,
+          "min_frame": 3,
+          "max_frame": 20,
+          "max_gap": 4,
+          "mean_gap": 3.4
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0421,
+          "median_nspe": 0.0216,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 3,
+            "temporal_distance": 3,
+            "num_visible_joints": 18,
+            "error": 0.3794
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 3,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.0205
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0145
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 3,
+            "temporal_distance": 0,
+            "num_visible_joints": 30,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0137
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 3,
+            "temporal_distance": 2,
+            "num_visible_joints": 29,
+            "error": 0.0147
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0228
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 8,
+            "temporal_distance": 0,
+            "num_visible_joints": 31,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0584
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 8,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.0621
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0153
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0716
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0708
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 29,
+            "error": 0.0139
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 30,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0267
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.0401
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0274
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 20,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0358
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 20,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0568
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 20,
+            "temporal_distance": 3,
+            "num_visible_joints": 33,
+            "error": 0.0653
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          7,
+          8,
+          12,
+          16,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8295,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 7,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0726,
+          "median_nspe": 0.0359,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 21,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 21,
+            "error": 0.3664
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.3589
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 18,
+            "error": 0.3794
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 7,
+            "temporal_distance": 3,
+            "num_visible_joints": 32,
+            "error": 0.0404
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 29,
+            "error": 0.0317
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0228
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 8,
+            "temporal_distance": 0,
+            "num_visible_joints": 31,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0584
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 8,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.0621
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0153
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0716
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0708
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 29,
+            "error": 0.0139
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 30,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0267
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.0401
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 16,
+            "temporal_distance": 3,
+            "num_visible_joints": 30,
+            "error": 0.0467
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 23,
+            "temporal_distance": 3,
+            "num_visible_joints": 33,
+            "error": 0.0653
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0486
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0244
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "clip_name": "vid100_13.avi",
+    "class": "Hook",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 24,
+      "detection_rate_pct": 100.0,
+      "mean_visibility": 0.8052,
+      "missed_frames": []
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8022,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.018,
+          "median_nspe": 0.0185,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0066
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0163
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0285
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 29,
+            "error": 0.0218
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 29,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0176
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 29,
+            "error": 0.0366
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0124
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.016
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.0279
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.0309
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0193
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0277
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0334
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0304
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 16,
+            "error": 0.0245
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 18,
+            "temporal_distance": 2,
+            "num_visible_joints": 16,
+            "error": 0.0454
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 20,
+            "error": 0.0233
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.0146
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 20,
+            "error": 0.0
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          3,
+          6,
+          11,
+          15,
+          19,
+          20
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7675,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.7391,
+          "min_frame": 3,
+          "max_frame": 20,
+          "max_gap": 5,
+          "mean_gap": 3.4
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0184,
+          "median_nspe": 0.0193,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 3,
+            "temporal_distance": 3,
+            "num_visible_joints": 26,
+            "error": 0.0288
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 3,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0244
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0135
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 3,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0119
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0176
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 6,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.018
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 6,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.021
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 11,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.0279
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 11,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0215
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 11,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 11,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0118
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 11,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0343
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 15,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0277
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 15,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 15,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0189
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 15,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0441
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 19,
+            "temporal_distance": 1,
+            "num_visible_joints": 16,
+            "error": 0.0245
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 19,
+            "temporal_distance": 0,
+            "num_visible_joints": 16,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 20,
+            "temporal_distance": 0,
+            "num_visible_joints": 16,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 16,
+            "error": 0.0197
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 20,
+            "temporal_distance": 2,
+            "num_visible_joints": 16,
+            "error": 0.0318
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 20,
+            "temporal_distance": 3,
+            "num_visible_joints": 16,
+            "error": 0.0452
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          6,
+          12,
+          15,
+          19,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7609,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 6,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0173,
+          "median_nspe": 0.0185,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0066
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0163
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 26,
+            "error": 0.0288
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 6,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.0242
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0176
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 6,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.018
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 6,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.021
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 6,
+            "temporal_distance": 3,
+            "num_visible_joints": 32,
+            "error": 0.0286
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.0247
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0118
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0248
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 15,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0277
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 15,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 15,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0189
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 15,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0441
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 19,
+            "temporal_distance": 1,
+            "num_visible_joints": 16,
+            "error": 0.0245
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 19,
+            "temporal_distance": 0,
+            "num_visible_joints": 16,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 19,
+            "temporal_distance": 1,
+            "num_visible_joints": 16,
+            "error": 0.0214
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 19,
+            "temporal_distance": 2,
+            "num_visible_joints": 16,
+            "error": 0.0407
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.0146
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 20,
+            "error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "clip_name": "vid101_23.avi",
+    "class": "Late Cut",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 24,
+      "detection_rate_pct": 100.0,
+      "mean_visibility": 0.7893,
+      "missed_frames": []
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7086,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0657,
+          "median_nspe": 0.035,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 17,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 15,
+            "error": 0.451
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 17,
+            "error": 0.4278
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0467
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0284
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0294
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.0449
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0222
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 30,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0138
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0374
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.0567
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0279
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 30,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 22,
+            "error": 0.0386
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 22,
+            "error": 0.069
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 21,
+            "error": 0.033
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 22,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 22,
+            "error": 0.0369
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 18,
+            "temporal_distance": 2,
+            "num_visible_joints": 22,
+            "error": 0.0525
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 19,
+            "error": 0.1002
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 19,
+            "error": 0.061
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 19,
+            "error": 0.0
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          3,
+          7,
+          8,
+          12,
+          19,
+          22
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.8436,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.8261,
+          "min_frame": 3,
+          "max_frame": 22,
+          "max_gap": 7,
+          "mean_gap": 3.8
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0456,
+          "median_nspe": 0.0301,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 3,
+            "temporal_distance": 3,
+            "num_visible_joints": 17,
+            "error": 0.4089
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 3,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0396
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0207
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 3,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0235
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 3,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0467
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0214
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 8,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0222
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 8,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0314
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0275
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0337
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.0567
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 12,
+            "temporal_distance": 3,
+            "num_visible_joints": 22,
+            "error": 0.0811
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 19,
+            "temporal_distance": 3,
+            "num_visible_joints": 21,
+            "error": 0.0544
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 19,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.0539
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 19,
+            "temporal_distance": 1,
+            "num_visible_joints": 22,
+            "error": 0.0369
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 19,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 19,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0289
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 22,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.0449
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 22,
+            "temporal_distance": 0,
+            "num_visible_joints": 20,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 22,
+            "temporal_distance": 1,
+            "num_visible_joints": 19,
+            "error": 0.061
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          7,
+          8,
+          12,
+          22,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7483,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 10,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0951,
+          "median_nspe": 0.0449,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 17,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 15,
+            "error": 0.451
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 17,
+            "error": 0.4278
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 17,
+            "error": 0.4089
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 7,
+            "temporal_distance": 3,
+            "num_visible_joints": 28,
+            "error": 0.0587
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 32,
+            "error": 0.0449
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 32,
+            "error": 0.0214
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 8,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0222
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 8,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0314
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0275
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0337
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.0567
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 12,
+            "temporal_distance": 3,
+            "num_visible_joints": 22,
+            "error": 0.0811
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 12,
+            "temporal_distance": 4,
+            "num_visible_joints": 22,
+            "error": 0.1243
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 12,
+            "temporal_distance": 5,
+            "num_visible_joints": 22,
+            "error": 0.1243
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 22,
+            "temporal_distance": 4,
+            "num_visible_joints": 20,
+            "error": 0.1292
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 22,
+            "temporal_distance": 3,
+            "num_visible_joints": 20,
+            "error": 0.1068
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 22,
+            "temporal_distance": 2,
+            "num_visible_joints": 20,
+            "error": 0.0888
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 22,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.0449
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 22,
+            "temporal_distance": 0,
+            "num_visible_joints": 20,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 19,
+            "error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "clip_name": "vid100_29.avi",
+    "class": "Pull",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 23,
+      "detection_rate_pct": 95.83,
+      "mean_visibility": 0.7826,
+      "missed_frames": [
+        22
+      ]
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7823,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0253,
+          "median_nspe": 0.0222,
+          "matched_ref_frames": 23,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0113
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0197
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0325
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0212
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0222
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 24,
+            "error": 0.0467
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.03
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0393
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0497
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.0466
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0244
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0143
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 22,
+            "error": 0.0426
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0155
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.041
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 18,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.0441
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 17,
+            "error": 0.081
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          3,
+          5,
+          8,
+          12,
+          16,
+          20
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7582,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.7391,
+          "min_frame": 3,
+          "max_frame": 20,
+          "max_gap": 4,
+          "mean_gap": 3.4
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0281,
+          "median_nspe": 0.0257,
+          "matched_ref_frames": 23,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 3,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0382
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 3,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0278
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0194
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 3,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0189
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0222
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.0216
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 8,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.03
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 8,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.067
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0257
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 29,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0264
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.0466
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0437
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 24,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0431
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 23,
+            "error": 0.0417
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 21,
+            "error": 0.0178
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 20,
+            "temporal_distance": 0,
+            "num_visible_joints": 21,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 19,
+            "error": 0.0423
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 20,
+            "temporal_distance": 3,
+            "num_visible_joints": 19,
+            "error": 0.1136
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          5,
+          8,
+          12,
+          16,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7917,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 7,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.03,
+          "median_nspe": 0.0257,
+          "matched_ref_frames": 23,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0113
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0197
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0325
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0212
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0222
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.0216
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 8,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.03
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 8,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.067
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0257
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 29,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0264
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.0466
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0437
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 24,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0431
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 23,
+            "error": 0.0417
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 16,
+            "temporal_distance": 3,
+            "num_visible_joints": 24,
+            "error": 0.0415
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 23,
+            "temporal_distance": 3,
+            "num_visible_joints": 19,
+            "error": 0.1136
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 17,
+            "error": 0.081
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "clip_name": "vid100_36.avi",
+    "class": "Reverse Sweep",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 20,
+      "detection_rate_pct": 83.33,
+      "mean_visibility": 0.8141,
+      "missed_frames": [
+        15,
+        20,
+        22,
+        23
+      ]
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 5,
+        "detection_rate_pct": 83.33,
+        "mean_visibility": 0.8438,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0637,
+          "median_nspe": 0.0327,
+          "matched_ref_frames": 20,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [
+          23
+        ],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0199
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.031
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0302
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0209
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.0344
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.0522
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.05
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0301
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0541
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.2255
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.0819
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.0618
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0455
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0555
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 18,
+            "temporal_distance": 3,
+            "num_visible_joints": 11,
+            "error": 0.4812
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          0,
+          6,
+          11,
+          14,
+          19,
+          20
+        ],
+        "detected_frames_count": 5,
+        "detection_rate_pct": 83.33,
+        "mean_visibility": 0.8421,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.8696,
+          "min_frame": 0,
+          "max_frame": 20,
+          "max_gap": 6,
+          "mean_gap": 4.0
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0545,
+          "median_nspe": 0.0325,
+          "matched_ref_frames": 20,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [
+          20
+        ],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0199
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.031
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 29,
+            "error": 0.0309
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 6,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.0435
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.0344
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 6,
+            "temporal_distance": 0,
+            "num_visible_joints": 25,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 6,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.0244
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 6,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.0426
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 11,
+            "temporal_distance": 2,
+            "num_visible_joints": 33,
+            "error": 0.0541
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 11,
+            "temporal_distance": 1,
+            "num_visible_joints": 33,
+            "error": 0.0263
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 11,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 11,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0341
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.0819
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.0618
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 19,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0523
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 19,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0555
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 19,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 19,
+            "temporal_distance": 2,
+            "num_visible_joints": 11,
+            "error": 0.4981
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          1,
+          12,
+          14,
+          20,
+          23
+        ],
+        "detected_frames_count": 4,
+        "detection_rate_pct": 66.67,
+        "mean_visibility": 0.879,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 11,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0786,
+          "median_nspe": 0.0521,
+          "matched_ref_frames": 20,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [
+          20,
+          23
+        ],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 1,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 1,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0154
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 1,
+            "temporal_distance": 2,
+            "num_visible_joints": 29,
+            "error": 0.017
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 1,
+            "temporal_distance": 3,
+            "num_visible_joints": 28,
+            "error": 0.0171
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 1,
+            "temporal_distance": 4,
+            "num_visible_joints": 26,
+            "error": 0.0309
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 1,
+            "temporal_distance": 5,
+            "num_visible_joints": 25,
+            "error": 0.0492
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 12,
+            "temporal_distance": 5,
+            "num_visible_joints": 26,
+            "error": 0.119
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 12,
+            "temporal_distance": 4,
+            "num_visible_joints": 25,
+            "error": 0.111
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 12,
+            "temporal_distance": 3,
+            "num_visible_joints": 30,
+            "error": 0.0801
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 30,
+            "error": 0.0549
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 30,
+            "error": 0.0341
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 30,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.2885
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.0618
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 14,
+            "temporal_distance": 3,
+            "num_visible_joints": 26,
+            "error": 0.1011
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 14,
+            "temporal_distance": 4,
+            "num_visible_joints": 26,
+            "error": 0.0995
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 14,
+            "temporal_distance": 5,
+            "num_visible_joints": 26,
+            "error": 0.1372
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 14,
+            "temporal_distance": 7,
+            "num_visible_joints": 11,
+            "error": 0.3545
+          }
+        ]
+      }
+    }
+  },
+  {
+    "clip_name": "vid100_28.avi",
+    "class": "Scoop",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 18,
+      "detection_rate_pct": 75.0,
+      "mean_visibility": 0.7841,
+      "missed_frames": [
+        5,
+        6,
+        7,
+        15,
+        16,
+        19
+      ]
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 5,
+        "detection_rate_pct": 83.33,
+        "mean_visibility": 0.7817,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0723,
+          "median_nspe": 0.0522,
+          "matched_ref_frames": 18,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [
+          5
+        ],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 29,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 29,
+            "error": 0.0336
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0617
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0771
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 0,
+            "temporal_distance": 4,
+            "num_visible_joints": 27,
+            "error": 0.0853
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 22,
+            "error": 0.0427
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 22,
+            "error": 0.0409
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0784
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.1747
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.1835
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 25,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 22,
+            "error": 0.0801
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 26,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 18,
+            "temporal_distance": 2,
+            "num_visible_joints": 22,
+            "error": 0.2973
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 16,
+            "error": 0.1154
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 22,
+            "error": 0.0308
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          0,
+          7,
+          10,
+          15,
+          16,
+          20
+        ],
+        "detected_frames_count": 3,
+        "detection_rate_pct": 50.0,
+        "mean_visibility": 0.7762,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.8696,
+          "min_frame": 0,
+          "max_frame": 20,
+          "max_gap": 7,
+          "mean_gap": 4.0
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.1319,
+          "median_nspe": 0.0801,
+          "matched_ref_frames": 18,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [
+          7,
+          15,
+          16
+        ],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 29,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 29,
+            "error": 0.0336
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0617
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0771
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 0,
+            "temporal_distance": 4,
+            "num_visible_joints": 27,
+            "error": 0.0853
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 10,
+            "temporal_distance": 2,
+            "num_visible_joints": 23,
+            "error": 0.079
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 10,
+            "temporal_distance": 1,
+            "num_visible_joints": 22,
+            "error": 0.0409
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 10,
+            "temporal_distance": 0,
+            "num_visible_joints": 24,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 10,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0509
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 10,
+            "temporal_distance": 2,
+            "num_visible_joints": 24,
+            "error": 0.0812
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 10,
+            "temporal_distance": 3,
+            "num_visible_joints": 23,
+            "error": 0.117
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 10,
+            "temporal_distance": 4,
+            "num_visible_joints": 21,
+            "error": 0.1088
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 20,
+            "temporal_distance": 3,
+            "num_visible_joints": 18,
+            "error": 0.3531
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 20,
+            "temporal_distance": 2,
+            "num_visible_joints": 22,
+            "error": 0.2973
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 20,
+            "temporal_distance": 0,
+            "num_visible_joints": 23,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 16,
+            "error": 0.3942
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 20,
+            "temporal_distance": 2,
+            "num_visible_joints": 18,
+            "error": 0.3005
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 20,
+            "temporal_distance": 3,
+            "num_visible_joints": 22,
+            "error": 0.2942
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          7,
+          12,
+          15,
+          16,
+          23
+        ],
+        "detected_frames_count": 3,
+        "detection_rate_pct": 50.0,
+        "mean_visibility": 0.8287,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 7,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0909,
+          "median_nspe": 0.0792,
+          "matched_ref_frames": 18,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [
+          7,
+          15,
+          16
+        ],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 29,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 29,
+            "error": 0.0336
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0617
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0771
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 0,
+            "temporal_distance": 4,
+            "num_visible_joints": 27,
+            "error": 0.0853
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 12,
+            "temporal_distance": 4,
+            "num_visible_joints": 26,
+            "error": 0.1458
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 12,
+            "temporal_distance": 3,
+            "num_visible_joints": 26,
+            "error": 0.1087
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 24,
+            "error": 0.0812
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 29,
+            "error": 0.0434
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.044
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.1747
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 12,
+            "temporal_distance": 5,
+            "num_visible_joints": 22,
+            "error": 0.2568
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 23,
+            "temporal_distance": 5,
+            "num_visible_joints": 24,
+            "error": 0.0826
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 23,
+            "temporal_distance": 3,
+            "num_visible_joints": 22,
+            "error": 0.2942
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 16,
+            "error": 0.1154
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 22,
+            "error": 0.0308
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "clip_name": "vid100_45.avi",
+    "class": "Straight Drive",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 22,
+      "detection_rate_pct": 91.67,
+      "mean_visibility": 0.7497,
+      "missed_frames": [
+        16,
+        19
+      ]
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7709,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0582,
+          "median_nspe": 0.0332,
+          "matched_ref_frames": 22,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 20,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 16,
+            "error": 0.0393
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 15,
+            "error": 0.0405
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 19,
+            "error": 0.4616
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0105
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.0647
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0319
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0193
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0343
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 26,
+            "error": 0.0432
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.1187
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 21,
+            "error": 0.1175
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 25,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.1351
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 19,
+            "error": 0.0708
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 20,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 18,
+            "temporal_distance": 2,
+            "num_visible_joints": 20,
+            "error": 0.0321
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0404
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.02
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          3,
+          7,
+          8,
+          12,
+          16,
+          20
+        ],
+        "detected_frames_count": 5,
+        "detection_rate_pct": 83.33,
+        "mean_visibility": 0.763,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.7391,
+          "min_frame": 3,
+          "max_frame": 20,
+          "max_gap": 4,
+          "mean_gap": 3.4
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0731,
+          "median_nspe": 0.0266,
+          "matched_ref_frames": 22,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [
+          16
+        ],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 3,
+            "temporal_distance": 3,
+            "num_visible_joints": 18,
+            "error": 0.0813
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 3,
+            "temporal_distance": 2,
+            "num_visible_joints": 16,
+            "error": 0.0264
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 15,
+            "error": 0.0165
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 3,
+            "temporal_distance": 0,
+            "num_visible_joints": 22,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 3,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.47
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 3,
+            "temporal_distance": 2,
+            "num_visible_joints": 19,
+            "error": 0.4616
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.0531
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 8,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0193
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 8,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0472
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0237
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0215
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.1187
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 12,
+            "temporal_distance": 3,
+            "num_visible_joints": 21,
+            "error": 0.0622
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 20,
+            "temporal_distance": 3,
+            "num_visible_joints": 21,
+            "error": 0.0918
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 20,
+            "temporal_distance": 2,
+            "num_visible_joints": 20,
+            "error": 0.0321
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 20,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0165
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 20,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0269
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 20,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0389
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          7,
+          8,
+          12,
+          16,
+          23
+        ],
+        "detected_frames_count": 5,
+        "detection_rate_pct": 83.33,
+        "mean_visibility": 0.8002,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 7,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0341,
+          "median_nspe": 0.0354,
+          "matched_ref_frames": 22,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [
+          16
+        ],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 20,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 16,
+            "error": 0.0393
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 15,
+            "error": 0.0405
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 18,
+            "error": 0.0813
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 7,
+            "temporal_distance": 3,
+            "num_visible_joints": 28,
+            "error": 0.0402
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0319
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.0531
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 8,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0193
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 8,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0472
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 26,
+            "error": 0.0237
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0215
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.1187
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 12,
+            "temporal_distance": 3,
+            "num_visible_joints": 21,
+            "error": 0.0622
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 12,
+            "temporal_distance": 5,
+            "num_visible_joints": 16,
+            "error": 0.0314
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 23,
+            "temporal_distance": 5,
+            "num_visible_joints": 20,
+            "error": 0.0406
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 23,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0389
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0404
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.02
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 33,
+            "error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "clip_name": "vid100_70.avi",
+    "class": "Upper Cut",
+    "total_frames": 24,
+    "reference_sequence": {
+      "total_frames": 24,
+      "detected_frames_count": 24,
+      "detection_rate_pct": 100.0,
+      "mean_visibility": 0.7528,
+      "missed_frames": []
+    },
+    "methods": {
+      "uniform": {
+        "indices": [
+          0,
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7485,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 5,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0314,
+          "median_nspe": 0.0338,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0148
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0296
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0448
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0222
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 5,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 5,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0381
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 5,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0523
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.0427
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 9,
+            "temporal_distance": 0,
+            "num_visible_joints": 25,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 9,
+            "temporal_distance": 1,
+            "num_visible_joints": 24,
+            "error": 0.0415
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 9,
+            "temporal_distance": 2,
+            "num_visible_joints": 24,
+            "error": 0.06
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 15,
+            "error": 0.0522
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 20,
+            "error": 0.0671
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 14,
+            "temporal_distance": 0,
+            "num_visible_joints": 20,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 14,
+            "temporal_distance": 1,
+            "num_visible_joints": 18,
+            "error": 0.0538
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 14,
+            "temporal_distance": 2,
+            "num_visible_joints": 17,
+            "error": 0.0961
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 21,
+            "error": 0.038
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 18,
+            "temporal_distance": 0,
+            "num_visible_joints": 21,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 18,
+            "temporal_distance": 1,
+            "num_visible_joints": 21,
+            "error": 0.0254
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 18,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.0404
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 22,
+            "error": 0.0182
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 23,
+            "error": 0.0162
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 23,
+            "error": 0.0
+          }
+        ]
+      },
+      "motion_aware": {
+        "indices": [
+          1,
+          7,
+          8,
+          15,
+          16,
+          20
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7726,
+        "temporal_coverage": {
+          "temporal_span_ratio": 0.8261,
+          "min_frame": 1,
+          "max_frame": 20,
+          "max_gap": 7,
+          "mean_gap": 3.8
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0322,
+          "median_nspe": 0.0297,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 1,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0148
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 1,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 1,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0169
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 1,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0353
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 1,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0569
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0523
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0548
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 8,
+            "temporal_distance": 0,
+            "num_visible_joints": 28,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 8,
+            "temporal_distance": 1,
+            "num_visible_joints": 25,
+            "error": 0.0427
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 8,
+            "temporal_distance": 2,
+            "num_visible_joints": 24,
+            "error": 0.0794
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 8,
+            "temporal_distance": 3,
+            "num_visible_joints": 24,
+            "error": 0.0647
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 15,
+            "temporal_distance": 3,
+            "num_visible_joints": 16,
+            "error": 0.0502
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 15,
+            "temporal_distance": 2,
+            "num_visible_joints": 19,
+            "error": 0.0576
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 15,
+            "temporal_distance": 1,
+            "num_visible_joints": 18,
+            "error": 0.0538
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 15,
+            "temporal_distance": 0,
+            "num_visible_joints": 22,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 24,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 23,
+            "error": 0.0411
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.0766
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 22,
+            "error": 0.0172
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 20,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 20,
+            "temporal_distance": 1,
+            "num_visible_joints": 22,
+            "error": 0.0122
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 20,
+            "temporal_distance": 2,
+            "num_visible_joints": 24,
+            "error": 0.0211
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 20,
+            "temporal_distance": 3,
+            "num_visible_joints": 23,
+            "error": 0.0241
+          }
+        ]
+      },
+      "hybrid": {
+        "indices": [
+          0,
+          7,
+          12,
+          15,
+          16,
+          23
+        ],
+        "detected_frames_count": 6,
+        "detection_rate_pct": 100.0,
+        "mean_visibility": 0.7245,
+        "temporal_coverage": {
+          "temporal_span_ratio": 1.0,
+          "min_frame": 0,
+          "max_frame": 23,
+          "max_gap": 7,
+          "mean_gap": 4.6
+        },
+        "nearest_pose_error": {
+          "computable": true,
+          "mean_nspe": 0.0364,
+          "median_nspe": 0.0355,
+          "matched_ref_frames": 24,
+          "unmatched_ref_frames": 0
+        },
+        "missing_detection_indices": [],
+        "nspe_details": [
+          {
+            "ref_frame": 0,
+            "matched_selected_frame": 0,
+            "temporal_distance": 0,
+            "num_visible_joints": 27,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 1,
+            "matched_selected_frame": 0,
+            "temporal_distance": 1,
+            "num_visible_joints": 27,
+            "error": 0.0148
+          },
+          {
+            "ref_frame": 2,
+            "matched_selected_frame": 0,
+            "temporal_distance": 2,
+            "num_visible_joints": 27,
+            "error": 0.0296
+          },
+          {
+            "ref_frame": 3,
+            "matched_selected_frame": 0,
+            "temporal_distance": 3,
+            "num_visible_joints": 27,
+            "error": 0.0484
+          },
+          {
+            "ref_frame": 4,
+            "matched_selected_frame": 7,
+            "temporal_distance": 3,
+            "num_visible_joints": 28,
+            "error": 0.0639
+          },
+          {
+            "ref_frame": 5,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 28,
+            "error": 0.0523
+          },
+          {
+            "ref_frame": 6,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0548
+          },
+          {
+            "ref_frame": 7,
+            "matched_selected_frame": 7,
+            "temporal_distance": 0,
+            "num_visible_joints": 32,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 8,
+            "matched_selected_frame": 7,
+            "temporal_distance": 1,
+            "num_visible_joints": 28,
+            "error": 0.0638
+          },
+          {
+            "ref_frame": 9,
+            "matched_selected_frame": 7,
+            "temporal_distance": 2,
+            "num_visible_joints": 25,
+            "error": 0.0831
+          },
+          {
+            "ref_frame": 10,
+            "matched_selected_frame": 12,
+            "temporal_distance": 2,
+            "num_visible_joints": 15,
+            "error": 0.0424
+          },
+          {
+            "ref_frame": 11,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 15,
+            "error": 0.0534
+          },
+          {
+            "ref_frame": 12,
+            "matched_selected_frame": 12,
+            "temporal_distance": 0,
+            "num_visible_joints": 16,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 13,
+            "matched_selected_frame": 12,
+            "temporal_distance": 1,
+            "num_visible_joints": 16,
+            "error": 0.03
+          },
+          {
+            "ref_frame": 14,
+            "matched_selected_frame": 15,
+            "temporal_distance": 1,
+            "num_visible_joints": 18,
+            "error": 0.0538
+          },
+          {
+            "ref_frame": 15,
+            "matched_selected_frame": 15,
+            "temporal_distance": 0,
+            "num_visible_joints": 22,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 16,
+            "matched_selected_frame": 16,
+            "temporal_distance": 0,
+            "num_visible_joints": 24,
+            "error": 0.0
+          },
+          {
+            "ref_frame": 17,
+            "matched_selected_frame": 16,
+            "temporal_distance": 1,
+            "num_visible_joints": 23,
+            "error": 0.0411
+          },
+          {
+            "ref_frame": 18,
+            "matched_selected_frame": 16,
+            "temporal_distance": 2,
+            "num_visible_joints": 21,
+            "error": 0.0766
+          },
+          {
+            "ref_frame": 19,
+            "matched_selected_frame": 16,
+            "temporal_distance": 3,
+            "num_visible_joints": 22,
+            "error": 0.1062
+          },
+          {
+            "ref_frame": 20,
+            "matched_selected_frame": 23,
+            "temporal_distance": 3,
+            "num_visible_joints": 23,
+            "error": 0.0241
+          },
+          {
+            "ref_frame": 21,
+            "matched_selected_frame": 23,
+            "temporal_distance": 2,
+            "num_visible_joints": 22,
+            "error": 0.0182
+          },
+          {
+            "ref_frame": 22,
+            "matched_selected_frame": 23,
+            "temporal_distance": 1,
+            "num_visible_joints": 23,
+            "error": 0.0162
+          },
+          {
+            "ref_frame": 23,
+            "matched_selected_frame": 23,
+            "temporal_distance": 0,
+            "num_visible_joints": 23,
+            "error": 0.0
+          }
+        ]
+      }
+    }
+  }
+]
